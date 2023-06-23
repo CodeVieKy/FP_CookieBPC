@@ -8,9 +8,15 @@ dependencies:
   '@types/node':
     specifier: 20.3.1
     version: 20.3.1
+  dotenv-safe:
+    specifier: ^8.2.0
+    version: 8.2.0
   next:
     specifier: 13.4.7
     version: 13.4.7(@babel/core@7.22.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.63.6)
+  postgres:
+    specifier: ^3.3.5
+    version: 3.3.5
   react:
     specifier: 18.2.0
     version: 18.2.0
@@ -20,11 +26,17 @@ dependencies:
   sass:
     specifier: ^1.63.6
     version: 1.63.6
+  server-only:
+    specifier: ^0.0.1
+    version: 0.0.1
   sharp:
     specifier: ^0.32.1
     version: 0.32.1
 
 devDependencies:
+  '@types/dotenv-safe':
+    specifier: ^8.1.2
+    version: 8.1.2
   '@types/react':
     specifier: 18.2.13
     version: 18.2.13
@@ -502,6 +514,12 @@ packages:
     dependencies:
       tslib: 2.5.3
     dev: false
+
+  /@types/dotenv-safe@8.1.2:
+    resolution: {integrity: sha512-R/B/wIMda6lRE2P1H0vwSoJsV78IOkhccE4vIvmKZQNXOIjiU0QyJsUXwSotBxOPZFZ/oOnjCa3+kK5kVJwGyw==}
+    dependencies:
+      dotenv: 8.6.0
+    dev: true
 
   /@types/eslint@8.40.2:
     resolution: {integrity: sha512-PRVjQ4Eh9z9pmmtaq8nTjZjQwKFk7YIHIud3lRoKRBgUQjgjRmoGxxGEPXQkF+lH7QkHJRNr5F4aBgYCW0lqpQ==}
@@ -1220,6 +1238,16 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
+
+  /dotenv-safe@8.2.0:
+    resolution: {integrity: sha512-uWwWWdUQkSs5a3mySDB22UtNwyEYi0JtEQu+vDzIqr9OjbDdC2Ip13PnSpi/fctqlYmzkxCeabiyCAOROuAIaA==}
+    dependencies:
+      dotenv: 8.6.0
+    dev: false
+
+  /dotenv@8.6.0:
+    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
+    engines: {node: '>=10'}
 
   /electron-to-chromium@1.4.439:
     resolution: {integrity: sha512-BHpErPSNhb9FB25+OwQP6mCAf3ZXfGbmuvc4LzBNVJwpCcXQJm++LerimocYRG9FRxUVRKZqaB7d0+pImSTPSg==}
@@ -2969,6 +2997,10 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /postgres@3.3.5:
+    resolution: {integrity: sha512-+JD93VELV9gHkqpV5gdL5/70HdGtEw4/XE1S4BC8f1mcPmdib3K5XsKVbnR1XcAyC41zOnifJ+9YRKxdIsXiUw==}
+    dev: false
+
   /prebuild-install@7.1.1:
     resolution: {integrity: sha512-jAXscXWMcCK8GgCoHOfIr0ODh5ai8mj63L2nWrjuAgXE6tDyYGnx4/8o/rCgU+B4JSyZBKbeZqzhtwtC3ovxjw==}
     engines: {node: '>=10'}
@@ -3232,6 +3264,10 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+
+  /server-only@0.0.1:
+    resolution: {integrity: sha512-qepMx2JxAa5jjfzxG79yPPq+8BuFToHd1hm7kI+Z4zAq1ftQiP7HcxMhDDItrbtwVeLg/cY2JnKnrcFkmiswNA==}
+    dev: false
 
   /sharp@0.32.1:
     resolution: {integrity: sha512-kQTFtj7ldpUqSe8kDxoGLZc1rnMFU0AO2pqbX6pLy3b7Oj8ivJIdoKNwxHVQG2HN6XpHPJqCSM2nsma2gOXvOg==}
