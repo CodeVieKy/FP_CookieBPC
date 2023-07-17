@@ -5,8 +5,8 @@ import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 import { createSession } from '../../../../database/sessions';
 import { getUserWithPasswordHashByUsername } from '../../../../database/users';
-import { User } from '../../../../migrations/1686731462-createUsers';
-import { secureCookieOptions } from '../../../../util/cookies';
+import { User } from '../../../../migrations/1687526189-createUsers';
+import { secureCookieOptions } from '../../../util/cookies';
 
 type Error = {
   error: string;
