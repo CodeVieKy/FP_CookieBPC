@@ -1,10 +1,7 @@
-import GenerateButton from './GenerateButton';
-
 export default function HomePage() {
   return (
     <main>
-      <GenerateButton />
-      <h1>Hello UpLeveled</h1>
+      <h1>Eat your own Cookie</h1>
     </main>
   );
 }

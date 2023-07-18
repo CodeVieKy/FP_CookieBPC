@@ -4,6 +4,8 @@ import { sql } from './connect';
 type UserWithPasswordHash = {
   id: number;
   username: string;
+  company: string;
+  country: string;
   passwordHash: string;
 };
 
